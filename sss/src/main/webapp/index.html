@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>登录</title>
+    <script>
+       function getRootPath(){
+            var curPageUrl = window.document.location.href;
+            var rootPath = curPageUrl.split("//")[0] + curPageUrl.split("//")[1].split("/")[0]
+                + "/" + curPageUrl.split("//")[1].split("/")[1];
+            return rootPath;
+        }
+    </script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+</head>
+<body>
+    <div id="login" class="login" style="text-align: center">
+
+        <form class="loginForm">
+            <span>用户名：</span>
+            <input type="text" id="username" name="username">
+            </br>
+            <span>密  码：</span>
+            <input type="password" id="password" name="password">
+
+        </form>
+        <button id="loginBtn" class="loginBtn" style="text-align: center" onclick="login(this)">登录</button>
+    </div>
+</body>
+</html>
